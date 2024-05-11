@@ -1,0 +1,52 @@
+{
+  "realm" : "Pomerium",
+  "users" : [ {
+    "id" : "9e00611f-e43e-4b41-939c-cf682c5f1499",
+    "createdTimestamp" : 1715277460622,
+    "username" : "user",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Thanh",
+    "lastName" : "Nguyen",
+    "email" : "kocoji@outlook.com",
+    "credentials" : [ {
+      "id" : "f64ddf6a-caa3-4a18-93b7-9c4721aa80f7",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1715278030963,
+      "secretData" : "{\"value\":\"YoglLZSssrmafH6Bug7Br88945IYp99WYSaryPleMl8=\",\"salt\":\"XFUoEXqA9e5OJDWLcnT2ig==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-pomerium" ],
+    "clientRoles" : {
+      "b2" : [ "Viewer" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ "/Admin" ]
+  }, {
+    "id" : "e233e0fd-3339-471e-8ab5-05de99668089",
+    "createdTimestamp" : 1715404191696,
+    "username" : "user2",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "",
+    "lastName" : "",
+    "credentials" : [ {
+      "id" : "879e6351-3bea-4c28-9ae6-8367fa6d3c71",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1715404203384,
+      "secretData" : "{\"value\":\"5fw6MKtml/V+IK3clGG2k6VWCUWhZorali487CJ1PCc=\",\"salt\":\"6QUPcdxpaZK135mjb679hQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-pomerium" ],
+    "notBefore" : 0,
+    "groups" : [ "/Viewer" ]
+  } ]
+}

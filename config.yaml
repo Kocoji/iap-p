@@ -1,0 +1,14 @@
+authenticate_service_url: https://pom.kocoji.co
+
+idp_provider: oidc
+idp_client_id: 'b2'
+idp_client_secret: '' # enter your client secret here
+idp_provider_url: 'https://key.kocoji.co/realms/Pomerium'
+
+signing_key: LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUVSNThaeDA2SHJXTW9PUTRaNjlMaDdMZUtFZW5TSmJZcHJvZ3V3TEl0blNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFK1FtamZKQ2ovdzkrOUhrRDVlbTlIZFhRM3ViUEhIdWNOMTlNOXJxR05PeEpTRmR3VHgvaAphdVkvcVFSWWR0YVpnVEpEUWZSYVQ2Q1pPYndSYTl2TXNnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo= # enter your encoded key here
+
+routes:
+  - from: https://graph.kocoji.co
+    to: http://grafana:3000
+    allow_any_authenticated_user: true
+    pass_identity_headers: true
