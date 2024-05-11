@@ -2,9 +2,10 @@
 
 ![alt text](attachs/image.png)
 Như tên gọi, thì IAP là proxy cung cấp khả năng truy cập an toàn tới các service upstream, thông qua các rule authen/authorize tích hợp với các hệ thống IdP.
-Với IAP thì hoàn toàn có thể truy cập thông qua giao thức HTTPs (proxy) thay vì phải kết nối với mạng VPN(network). Vì lý do này, ta có thể truy cập các hệ thống nội bộ chỉ cần dùng trình duyệt hiện có, không cần cài thêm các client nào khác.
-Giải pháp chủ yếu biết đến được triển khai từ Google Cloud, về phía Opensource khác có thể kể đến là ORY Oathkeeper và Pomerium.
-Ngoài việc cấu hình HTTP route, Pomerium còn cung cấp khả năng route ở layer 4 (TCP) tới các service nội bộ - với tính năng này, yêu cầu người dùng sẽ phải sử dụng client.
+Với IAP thì hoàn toàn có thể truy cập thông qua giao thức HTTPs (Proxy) thay vì phải kết nối với mạng VPN(network). Vì lý do này, ta có thể truy cập các hệ thống nội bộ chỉ cần dùng trình duyệt hiện có, không cần cài thêm các client nào khác.
+Giải pháp chủ yếu biết đến được triển khai từ Google Cloud, về phía Opensource khác có thể kể đến là [ORY Oathkeeper](https://github.com/ory/oathkeeper) và [Pomerium](https://www.pomerium.com/).
+
+Ngoài việc cấu hình HTTP route, Pomerium còn cung cấp khả năng route ở layer 4 (TCP) tới các service nội bộ - với tính năng này, yêu cầu người dùng sẽ phải sử dụng client để tương tác.
 
 # Lab 
 Bài lab được thực hiện trên single node, mô hình triển khai như sau:
